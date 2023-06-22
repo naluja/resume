@@ -1,0 +1,358 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: linear-gradient(white, #dee2e6);
+}
+
+.navbar {
+  height: 50px;
+  background: linear-gradient(to right, #14213d, #dee2e6 100%);
+  color: white;
+  position: fixed;
+  width: 100%;
+}
+.navbar .navbar-nav {
+  padding: 10px;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+.navbar .navbar-nav a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+.navbar .navbar-nav a:hover {
+  color: #fe5d9f;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.about h1 {
+  margin: auto;
+  margin-bottom: 5px;
+  font-weight: 200;
+  font-size: 2rem;
+}
+.about h2 {
+  font-size: 1rem;
+  text-align: center;
+}
+.about .image {
+  background-image: url(me.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border-radius: 50%;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 15px 1px #14213d;
+}
+.about .text {
+  text-align: justify;
+  width: 320px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.about .text .pink {
+  color: #fe5d9f;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+
+.education,
+.work {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: auto;
+}
+.education .card,
+.work .card {
+  margin-bottom: 12px;
+}
+.education .card .heading,
+.work .card .heading {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.education .card .text,
+.work .card .text {
+  font-weight: 200;
+  font-size: 0.8rem;
+  display: none;
+}
+
+.skills {
+  width: 320px;
+  margin: auto;
+}
+.skills .icons {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skills .icons img {
+  width: 20%;
+  height: 40%;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.myprojects h2 {
+  text-align: center;
+}
+.myprojects .projects {
+  margin: auto;
+  width: 320px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.myprojects .projects .arrows {
+  height: 40px;
+}
+.myprojects .projects .arrows i {
+  padding: 10px;
+  transition: transform 0.3s;
+  color: #14213d;
+  margin: auto;
+}
+.myprojects .projects .arrows i:hover {
+  transform: translateX(5px);
+}
+.myprojects .projects .projects-card {
+  box-shadow: 0px 0px 10px 2px #dee2e6;
+  height: 320px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.myprojects .projects .projects-card h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.myprojects .projects .projects-card .project {
+  width: 320px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.myprojects .projects .project-btn {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 15px 0;
+}
+.myprojects .projects .project-btn button {
+  padding: 10px;
+  border: 1px solid #14213d;
+  border-radius: 10px;
+  background-color: white;
+  color: #14213d;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.myprojects .projects .project-btn button:hover {
+  transform: translateY(-5px);
+  border-bottom: 4px solid #14213d;
+}
+.myprojects .projects .p1 {
+  background-image: url(/css/todolist.png);
+  background-size: cover;
+}
+.myprojects .projects .p2 {
+  background-image: url(/css/timecount.png);
+  background-size: cover;
+}
+.myprojects .projects .p3 {
+  background-image: url(/css/babysteps.png);
+  background-size: cover;
+}
+
+.lines {
+  position: relative;
+  height: 50px;
+}
+.lines .line1 {
+  position: absolute;
+  left: 0;
+  height: 9px;
+  background: #000000;
+  animation: lines 4s 5s infinite linear;
+}
+.lines .line3 {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  height: 5px;
+  background-color: #14213d;
+  animation: lines 5s 1.5s infinite linear;
+}
+.lines .line2 {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  height: 7px;
+  background-color: #fe5d9f;
+  animation: lines 5s 3s infinite linear;
+}
+
+.contact {
+  width: 320px;
+  margin: auto;
+}
+.contact .contact-card {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contact .contact-card i {
+  padding: 10px;
+}
+.contact .contact-card a {
+  text-decoration: none;
+  color: #14213d;
+  transition: all 0.3s;
+}
+.contact .contact-card a:hover {
+  transform: translateY(-5px);
+  color: #fe5d9f;
+}
+
+h3 {
+  font-weight: 200;
+}
+
+h4 {
+  font-weight: 200;
+}
+
+@keyframes lines {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+    opacity: 0%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .container h2 {
+    font-size: 2rem;
+    border-bottom: 1px solid #dee2e6;
+  }
+  .container .about {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px #dee2e6;
+    border-bottom: 10px solid #14213d;
+    height: 800px;
+  }
+  .container .about h1 {
+    font-size: 2.3rem;
+  }
+  .container .about h2 {
+    font-size: 1.2rem;
+    width: 300px;
+    margin: 10px auto;
+    border-bottom: none;
+  }
+  .container .about .text {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    width: 500px;
+  }
+  .container .experience {
+    margin-top: 80px;
+    box-shadow: 0px 0px 5px 1px #dee2e6;
+    border-bottom: 10px solid #14213d;
+    border-radius: 5px;
+    padding: 30px;
+    height: 800px;
+  }
+  .container .experience .education,
+  .container .experience .work {
+    width: 600px;
+    font-size: 1.2rem;
+  }
+  .container .experience .education .card,
+  .container .experience .work .card {
+    margin-bottom: 30px;
+  }
+  .container .experience .education .card .heading,
+  .container .experience .work .card .heading {
+    font-size: 1.1rem;
+  }
+  .container .experience .education .card .text,
+  .container .experience .work .card .text {
+    font-weight: 200;
+    font-size: 1rem;
+  }
+  .container .experience .skills {
+    width: 600px;
+  }
+  .container .experience .skills .icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .container .experience .skills .icons img {
+    width: 10%;
+    height: 20%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  .myprojects h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .myprojects .projects {
+    width: 90%;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .myprojects .projects .arrows {
+    margin: auto 0px;
+  }
+  .myprojects .projects .projects-card {
+    height: 450px;
+    width: 450px;
+    margin-right: 50px;
+  }
+  .myprojects .projects .projects-card .project {
+    width: 100%;
+    height: 400px;
+  }
+}/*# sourceMappingURL=style.css.map */
