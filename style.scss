@@ -12,6 +12,9 @@ body {
 nav {
 	z-index: 5;
 	width: 100%;
+	.nav-link{
+		text-transform: uppercase;
+	}
 }
 header {
 	position: relative;
@@ -75,11 +78,10 @@ h2 {
 	background-image: url(/css/bc-like.jpg);
 	background-size: cover;
 	background-attachment: fixed;
-	color: white;
 	position: relative;
 	z-index: 0;
 	.passions-shadow {
-		background-color: rgba($color: black, $alpha: 0.2);
+		background-color: rgba($color: white, $alpha: 0.6);
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -146,7 +148,7 @@ h2 {
 	padding: 20px;
 	background-image: url(/css/bc-projects.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: bottom;
 	h5 {
 		text-transform: uppercase;
 		font-size: 1.5rem;
@@ -166,23 +168,33 @@ h2 {
 	}
 }
 .contact {
-	width: 320px;
-	margin: auto;
+	color: white;
 	.contact-card {
-		height: 150px;
+		width: 320px;
+		margin: auto;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		text-align: center;
+		.name{
+			font-size: 1.5rem;
+		}
+		.links{
+			display:flex;
+			justify-content: space-around;
+			p{
+				display:flex;
+				flex-direction: column;
+			}
+		}
 		i {
 			padding: 10px;
 		}
 		a {
 			text-decoration: none;
-			color: $gray;
+			color: white;
 			transition: all 0.3s;
 		}
 		a:hover {
-			transform: translateY(-5px);
 			color: $pink;
 		}
 	}
