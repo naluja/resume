@@ -1,4 +1,5 @@
 @use "colors" as *;
+@use "animation" as *;
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -12,7 +13,7 @@ body {
 nav {
 	z-index: 5;
 	width: 100%;
-	.nav-link{
+	.nav-link {
 		text-transform: uppercase;
 	}
 }
@@ -107,8 +108,8 @@ h2 {
 	background-image: url(/css/bg-skills.jpg);
 	position: relative;
 	z-index: 0;
-	color:white;
-	.skills-shadow{
+	color: white;
+	.skills-shadow {
 		background-color: rgba($color: black, $alpha: 0.6);
 		position: absolute;
 		width: 100%;
@@ -121,12 +122,11 @@ h2 {
 		margin-top: 30px;
 		text-align: center;
 		text-transform: uppercase;
-		
 	}
 	.icons {
 		.item {
 			margin: 30px 0;
-		
+
 			.heading {
 				text-transform: uppercase;
 				font-size: 1.2rem;
@@ -175,14 +175,14 @@ h2 {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		.name{
+		.name {
 			font-size: 1.5rem;
 		}
-		.links{
-			display:flex;
+		.links {
+			display: flex;
 			justify-content: space-around;
-			p{
-				display:flex;
+			p {
+				display: flex;
 				flex-direction: column;
 			}
 		}
@@ -196,117 +196,6 @@ h2 {
 		}
 		a:hover {
 			color: $pink;
-		}
-	}
-}
-h3 {
-	font-weight: 200;
-}
-h4 {
-	font-weight: 200;
-}
-@keyframes lines {
-	0% {
-		width: 0%;
-	}
-	100% {
-		width: 95%;
-		opacity: 0%;
-	}
-}
-@media screen and (min-width: 1200px) {
-	.container {
-		display: flex;
-		justify-content: space-around;
-		h2 {
-			font-size: 2rem;
-			border-bottom: 1px solid $lightGray;
-		}
-		.about {
-			margin-top: 80px;
-			margin-bottom: 10px;
-			padding: 30px;
-			border-radius: 5px;
-			box-shadow: 0px 0px 5px 1px $lightGray;
-			border-bottom: 10px solid $gray;
-			height: 800px;
-			h1 {
-				font-size: 2.3rem;
-			}
-			h2 {
-				font-size: 1.2rem;
-				width: 300px;
-				margin: 10px auto;
-				border-bottom: none;
-			}
-			.text {
-				font-size: 1.1rem;
-				line-height: 1.8rem;
-				width: 500px;
-			}
-		}
-		.experience {
-			margin-top: 80px;
-			box-shadow: 0px 0px 5px 1px $lightGray;
-			border-bottom: 10px solid $gray;
-			border-radius: 5px;
-			padding: 30px;
-			height: 800px;
-			.education,
-			.work {
-				width: 600px;
-				font-size: 1.2rem;
-				.card {
-					margin-bottom: 30px;
-					.heading {
-						font-size: 1.1rem;
-					}
-					.text {
-						font-weight: 200;
-						font-size: 1rem;
-					}
-				}
-			}
-			.skills {
-				width: 600px;
-				.icons {
-					margin-top: 20px;
-					display: flex;
-					justify-content: space-around;
-
-					img {
-						width: 10%;
-						height: 20%;
-						margin-right: 20px;
-						margin-bottom: 10px;
-					}
-				}
-			}
-		}
-	}
-	.myprojects {
-		h2 {
-			text-align: center;
-			font-size: 2rem;
-			margin-bottom: 20px;
-		}
-
-		.projects {
-			width: 90%;
-			flex-direction: row-reverse;
-			justify-content: center;
-			.arrows {
-				margin: auto 0px;
-			}
-			.projects-card {
-				height: 450px;
-				width: 450px;
-				margin-right: 50px;
-				.project {
-					width: 100%;
-					height: 400px;
-				}
-			}
 		}
 	}
 }
