@@ -55,6 +55,9 @@ h2 {
 	text-align: center;
 	text-transform: uppercase;
 }
+.white-bc{
+background-color: rgb(252, 250, 250);
+}
 .about-me {
 	background-color: $bc;
 }
@@ -81,6 +84,7 @@ h2 {
 	background-attachment: fixed;
 	position: relative;
 	z-index: 0;
+	background-position: center;
 	.passions-shadow {
 		background-color: rgba($color: white, $alpha: 0.6);
 		position: absolute;
@@ -155,6 +159,11 @@ h2 {
 		margin-bottom: 10px;
 		text-align: center;
 	}
+	.card{
+		margin-bottom: 20px;
+		background-color: rgba($color: white, $alpha: 0.7);
+		text-align: center;
+	}
 
 	.project-btn {
 		display: flex;
@@ -196,6 +205,21 @@ h2 {
 		}
 		a:hover {
 			color: $pink;
+		}
+	}
+}
+@media (min-width:576px){
+	.myprojects{
+		.card{
+			height: 420px;
+		}
+	}
+}
+
+@media (min-width:768px){
+	.myprojects{
+		.card{
+			height: 330px;
 		}
 	}
 }

@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a6428406eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/css/style.css">
     <title>CV</title>
 </head>
@@ -55,7 +56,7 @@
 
     <section class="about-me" id="about">
         <div class="about-shadow"></div>
-        <div class="about text-focus-in">
+        <div class="about">
             <h2>Hi!</h2>
             <div class="text">
                 <p>I am a creative soul who loves the process of creation. I am self-taught and enjoy interacting
@@ -74,38 +75,38 @@
             <h2>i like</h2>
             <div class="passion-items row">
                 <div class="col-sm-6 col-md-4 text-center">
-                    <div class="item">
+                    <div class="item" data-aos="zoom-in" data-aos-delay="50">
                         <i class="fa-solid fa-om"></i>
                         <p>yoga</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 text-center">
-                    <div class="item">
+                    <div class="item" data-aos="zoom-in" data-aos-delay="100">
                         <i class="fa-solid fa-tree"></i>
                         <p>to spend time in the lap of nature.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 text-center">
-                    <div class="item">
+                    <div class="item"data-aos="zoom-in" data-aos-delay="150">
                         <i class="fa-solid fa-palette"></i>
                         <p>to paint</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 text-center">
-                    <div class="item">
+                    <div class="item"data-aos="zoom-in" data-aos-delay="200">
                         <i class="fa-solid fa-book"></i>
                         <p>especially fantasy and sci-fi</p>
                     </div>
                 </div>
 
                 <div class="col-sm-6 col-md-4 text-center">
-                    <div class="item">
+                    <div class="item"data-aos="zoom-in" data-aos-delay="250">
                         <i class="fa-solid fa-person-snowboarding"></i>
                         <p>winter sports</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 text-center">
-                    <div class="item">
+                    <div class="item" data-aos="zoom-in" data-aos-delay="300">
                         <i class="fa-solid fa-mitten"></i>
                         <p>to knit</p>
                     </div>
@@ -117,32 +118,32 @@
         <div class="skills-shadow"></div>
         <h2>Skills</h2>
         <div class="icons row">
-            <div class="col-sm-6 col-md-4 text-center item"><i class="fa-brands fa-html5"></i>
+            <div class="col-sm-6 col-md-4 text-center item" data-aos="zoom-in" data-aos-delay="50"><i class="fa-brands fa-html5"></i>
                 <p class="heading">html</p>
                 <p>4/5</p>
             </div>
-            <div class="col-sm-6 col-md-4 text-center item"><i class="fa-brands fa-css3-alt"></i>
+            <div class="col-sm-6 col-md-4 text-center item" data-aos="zoom-in" data-aos-delay="150"><i class="fa-brands fa-css3-alt"></i>
                 <p class="heading">css</p>
                 <p>4/5</p>
             </div>
-            <div class="col-sm-6 col-md-4 text-center item"><i class="fa-brands fa-sass"></i>
+            <div class="col-sm-6 col-md-4 text-center item" data-aos="zoom-in" data-aos-delay="200"><i class="fa-brands fa-sass"></i>
                 <p class="heading">Sass</p>
                 <p>4/5</p>
             </div>
-            <div class="col-sm-6 col-md-4 text-center item"><i class="fa-brands fa-js"></i>
+            <div class="col-sm-6 col-md-4 text-center item" data-aos="zoom-in" data-aos-delay="250"><i class="fa-brands fa-js"></i>
                 <p class="heading">javascript</p>
                 <p>3/5</p>
             </div>
 
-            <div class="col-sm-6 col-md-4 text-center item"><i class="fa-brands fa-python"></i>
+            <div class="col-sm-6 col-md-4 text-center item" data-aos="zoom-in" data-aos-delay="300"><i class="fa-brands fa-python"></i>
                 <p class="heading">python</p>
                 <p>2/5</p>
             </div>
             <h3>also know well</h3>
-            <div class="col-sm-6  text-center item"><i class="fa-brands fa-bootstrap"></i>
+            <div class="col-sm-6  text-center item" data-aos="zoom-in" data-aos-delay="350"><i class="fa-brands fa-bootstrap"></i>
                 <p class="heading">bootstrap</p>
             </div>
-            <div class="col-sm-6  text-center item"><i class="fa-brands fa-github"></i>
+            <div class="col-sm-6  text-center item" data-aos="zoom-in" data-aos-delay="450"><i class="fa-brands fa-github"></i>
                 <p class="heading">github</p>
             </div>
         </div>
@@ -154,50 +155,75 @@
         <h2>My projects</h2>
 
         <div class="card-group">
-            <div class="card mx-3">
-                <div class="card-body">
-                    <h5 class="card-title">Babysteps</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-                <div class="card-footer">
-                    <div class="project-btn">
-                        <a href="https://curious-cassata-906966.netlify.app"><button class="btn btn-dark">view
-                                site</button></a>
-                        <a href="https://github.com/naluja/babysteps_onlyFront"><button class="btn btn-dark">view
-                                code</button></a>
+            <div class="col-sm-6 col-lg-4">
+                <div class="card mx-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Feedraw</h5>
+                        <p class="card-text">This website is created using Bootstrap for a company I invented called
+                            'Feed Raw,' which specializes in creating and delivering catering for dogs."</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="project-btn">
+                            <a href="https://feedraw.netlify.app/"><button class="btn btn-dark">view
+                                    site</button></a>
+                            <a href="https://github.com/naluja/feedraw"><button class="btn btn-dark">view
+                                    code</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card mx-3">
-                <div class="card-body">
-                    <h5 class="card-title">Todo list</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-                <div class="card-footer">
-                    <div class="project-btn">
-                        <a href="https://curious-cassata-906966.netlify.app"><button class="btn btn-dark">view
-                                site</button></a>
-                        <a href="https://github.com/naluja/babysteps_onlyFront"><button class="btn btn-dark">view
-                                code</button></a>
+            <div class="col-sm-6 col-lg-4">
+                <div class="card mx-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Babysteps</h5>
+                        <p class="card-text">An application for recording information about a child, written in Flask. I
+                            had an issue with deploying the website, so I'm currently hosting only the front-end part.
+                            The link to the full code with the complete application (using Python and SQLite) is here -
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="project-btn">
+                            <a href="https://curious-cassata-906966.netlify.app"><button class="btn btn-dark">view
+                                    site</button></a>
+                            <a href="https://github.com/naluja/babysteps_onlyFront"><button class="btn btn-dark">view
+                                    code</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card mx-3">
-                <div class="card-body">
-                    <h5 class="card-title">Timecount</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+            <div class="col-sm-6 col-lg-4">
+                <div class="card mx-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Todo list</h5>
+                        <p class="card-text">A simple to-do list.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="project-btn">
+                            <a href="https://curious-cassata-906966.netlify.app"><button class="btn btn-dark">view
+                                    site</button></a>
+                            <a href="https://github.com/naluja/babysteps_onlyFront"><button class="btn btn-dark">view
+                                    code</button></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-footer">
-                    <div class="project-btn">
-                        <a href="https://curious-cassata-906966.netlify.app"><button class="btn btn-dark">view
-                                site</button></a>
-                        <a href="https://github.com/naluja/babysteps_onlyFront"><button class="btn btn-dark">view
-                                code</button></a>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="card mx-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Timecount</h5>
+                        <p class="card-text">Timecount counts down to the date you choose, and it automatically sets it
+                            to the New Year. You can also change the background photo.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="project-btn">
+                            <a href="https://curious-cassata-906966.netlify.app"><button class="btn btn-dark">view
+                                    site</button></a>
+                            <a href="https://github.com/naluja/babysteps_onlyFront"><button class="btn btn-dark">view
+                                    code</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -228,6 +254,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="aos.js"></script>
     <script src="main.js"></script>
 </body>
 

@@ -1,19 +1,27 @@
-const experience = document.querySelector('.experience')
+const nav = document.querySelector(".navbar")
+const navLinks = nav.querySelectorAll(".nav-link")
+const navList = nav.querySelector(".collapse")
+const navBtn = nav.querySelector("button")
+const year = document.querySelector(".year")
 
-// chevron up and down 
-const chevronMove = e => {
-  chevron = e.target.classList
-  let text = (e.target.parentElement).nextElementSibling
-  if (chevron.contains('fa-chevron-down')){
-    chevron.remove('fa-chevron-down')
-    chevron.add('fa-chevron-up')
-    text.style.display = 'block'
-  }
-  else if (chevron.contains('fa-chevron-up')){
-    chevron.remove('fa-chevron-up')
-    chevron.add('fa-chevron-down')
-    text.style.display = 'none'
-  }
+const addShadow = () => {
+	if (window.scrollY >= 200) {
+		nav.classList.add("white-bc")
+	} else {
+		nav.classList.remove("white-bc")
+	}
+}
+const hideNav = () => {
+    
+    navList.classList.remove("show")
+    navBtn.classList.add("collapsed")
 }
 
-experience.addEventListener("click", chevronMove)
+
+document.addEventListener("DOMContentLoaded", function () {
+	window.addEventListener("scroll", addShadow)
+
+    navLinks.forEach(item => item.addEventListener("click", hideNav))
+   
+})
+
