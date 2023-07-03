@@ -164,6 +164,14 @@ background-color: rgb(252, 250, 250);
 		background-color: rgba($color: white, $alpha: 0.7);
 		text-align: center;
 	}
+	.babystepsLink{
+		font-size: 1.2rem;
+		text-decoration: none;
+		color:gray;
+	}
+	.babystepsLink:hover{
+		color:black;
+	}
 
 	.project-btn {
 		display: flex;
