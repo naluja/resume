@@ -73,9 +73,7 @@ h2 {
 		padding: 30px;
 		letter-spacing: 0.1rem;
 		line-height: 1.5rem;
-		.pink {
-			color: $pink;
-		}
+		
 	}
 }
 .passions {
@@ -220,7 +218,7 @@ h2 {
 			transition: all 0.3s;
 		}
 		a:hover {
-			color: $pink;
+			color: greenyellow;
 		}
 	}
 }

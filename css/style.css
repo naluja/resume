@@ -129,9 +129,6 @@ h2 {
   letter-spacing: 0.1rem;
   line-height: 1.5rem;
 }
-.about .text .pink {
-  color: #fe5d9f;
-}
 
 .passions {
   background-image: url(/css/bc-like.jpg);
@@ -274,7 +271,7 @@ h2 {
   transition: all 0.3s;
 }
 .contact .contact-card a:hover {
-  color: #fe5d9f;
+  color: greenyellow;
 }
 
 @media (min-width: 576px) {
