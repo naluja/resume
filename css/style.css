@@ -213,14 +213,13 @@ h2 {
   margin-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.7);
 }
-.myprojects .card .card-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
 .myprojects .card .bold {
   font-weight: 700;
+}
+.myprojects .card .red {
+  color: tomato;
+  font-size: 0.8rem;
+  margin: 0;
 }
 .myprojects .babystepsLink {
   font-size: 1.2rem;
@@ -281,6 +280,6 @@ h2 {
 }
 @media (min-width: 768px) {
   .myprojects .card {
-    height: 400px;
+    height: 500px;
   }
 }/*# sourceMappingURL=style.css.map */
