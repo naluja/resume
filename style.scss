@@ -162,7 +162,15 @@ h2 {
 	.card {
 		margin-bottom: 20px;
 		background-color: rgba($color: white, $alpha: 0.7);
-		text-align: center;
+		.card-text{
+			display:flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.bold{
+			font-weight:700;
+		}
 	}
 	.babystepsLink {
 		font-size: 1.2rem;
@@ -219,7 +227,7 @@ h2 {
 @media (min-width: 576px) {
 	.myprojects {
 		.card {
-			height: 420px;
+			height: 500px;
 		}
 	}
 }
@@ -227,7 +235,7 @@ h2 {
 @media (min-width: 768px) {
 	.myprojects {
 		.card {
-			height: 330px;
+			height: 400px;
 		}
 	}
 }
